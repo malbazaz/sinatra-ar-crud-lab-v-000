@@ -6,13 +6,13 @@
 
   <body>
 
-<h1>Create a blogpost</h1>
+<h1>Edit your blogpost</h1>
 
 <form action="/posts/<%= @model.id %>" method="post">
 <input id="hidden" type="hidden" name="_method" value="patch">
   <!-- post -->
 <p><label for="post[name]">Post Name</label>
-  
+
 <input type="text" name="name" id="post[:name]"></p>
 
 <p><label for="post[content]">Post Content</label>
