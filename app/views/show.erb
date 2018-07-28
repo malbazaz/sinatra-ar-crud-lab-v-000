@@ -9,6 +9,7 @@
 <p>Post Name: <%= @post.name  %></p>
 <p>Post Content: <%= @post.content  %></p>
 <p>Post Id: <%= @post.id  %></p>
+
 <form method="post" action="/posts/<%= @post.id %>/delete">
   <input id="hidden" type="hidden" name="_method" value="delete">
   <input type="submit" value="delete" id="delete">
