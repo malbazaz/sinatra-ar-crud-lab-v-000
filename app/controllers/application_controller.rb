@@ -37,7 +37,7 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/posts/:id' do
-
+    @post.save
     redirect to 'posts/:id'
 
   end
