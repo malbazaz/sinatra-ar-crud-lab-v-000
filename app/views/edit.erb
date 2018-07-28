@@ -13,11 +13,11 @@
   <!-- post -->
 <p><label for="post[name]">Post Name</label>
 
-<input type="text" name="name"></p>
+<input type="text" name="name" value="<%= @post.name %>"></p>
 
 <p><label for="post[content]">Post Content</label>
 <input type="text" name="content"></p>
-<p><input type="submit" id="submit">
+<p><input type="submit" id="submit" value="<%= @post.content %>">
 </form>
 </body>
 </html>
